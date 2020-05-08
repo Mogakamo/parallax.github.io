@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Parallax Scrolling</title>
+  <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
+  <meta name="author" content="Richard Shepherd, Smashing Magazine">
+
+  <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="main" role="main">
+
+	<!-- Section #1 / Intro -->
+	<section id="first" class="story" data-speed="8" data-type="background">    	
+		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
+		<article>
+
+			<img src="images/tutorial-title.png" alt="tutorial-title" width="711" height="242" />
+			<p></p>
+			<p></p>
+	    </article>
+	</section>
+
+	<!-- Section #2 / Background Only -->
+	<section id="second" class="story" data-speed="4" data-type="background">
+		<article>
+			<h2>The Smashers </h2>
+		    	<p>This is the smashing magazine</p>
+		    	<p>We bring the latest fashion news trends that you can't avoid...</p>
+		    	<p></p>
+		    	<p></p>	
+		    	<p>Head back to <a href="">Smashing Magazine</a>, or hop on over to <a href="#">codesforpassion.com</a>.</p>		
+		</article>
+	</section>
+	
+	<!-- Section #3 / Photos -->
+	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+    	<article>
+    		<h2>Fashion trends</h2>
+	    	<div class="textbox">    	
+		    	<p>Need the latest trends visit <a href="#">The Smashing Magazine</a></p>
+		    	</div>
+    	</article>
+	</section>	
+	
+
+	<!-- Section #4 / HTML5 Video -->
+	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+    
+	<!-- Section #5 / The End-->
+	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
+	</section>
+	
+  </div> <!-- // End of #main -->
+
+
+
+  <!-- Our Javascript, starting with jQuery -->
+  <script src='js/libs/jquery-1.6.1.min.js'></script>
+  <script src="js/script.js"></script>
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");
+  <![endif]-->
+
+</body>
+</html>
